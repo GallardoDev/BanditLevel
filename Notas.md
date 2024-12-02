@@ -367,7 +367,7 @@
 - **El comando `$0` en la terminal, mostrará el nombre del shell o el comando que se está ejecutando**
 - **Posible script para descomprimir los archivos multiples veces comprimidos en el  nivel 13**
 
-  ```bash
+ ```bash
 #! /bin/bash
 
 name_decompressed=$(7z l content.gzip | grep "Name" -A 2 | tail -n1 | awk 'NF{print $NF}')
@@ -383,4 +383,5 @@ while true; do
         exit 1
     fi
 done
+
 
